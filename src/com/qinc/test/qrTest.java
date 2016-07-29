@@ -18,7 +18,7 @@ import com.google.zxing.common.BitMatrix;
  * 生成二维码test
  */
 public class qrTest {
-	 private Integer onColor = 0xFF00cc00;  //前景�? 
+	 private Integer onColor = 0xFF00cc00;  //前景�? jjj
 	  private Integer offColor = 0xFFFFFFFF; //背景�? 
 	public void testEncode() throws WriterException, IOException { 
 		
