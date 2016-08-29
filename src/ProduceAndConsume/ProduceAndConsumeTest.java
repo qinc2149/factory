@@ -2,6 +2,8 @@ package ProduceAndConsume;
 /**
  * @author qinc2149
  * 生产者，消费者问题
+ * 调用wait()，使该线程处于等待池(wait blocked pool),直到notify()/notifyAll()，
+ * 线程被唤醒被放到锁定池(lock blocked pool )，释放同步锁使线程回到可运行状态（Runnable）
  */
 public class ProduceAndConsumeTest {
 	public static final int Max_P=4;
