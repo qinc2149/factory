@@ -1,13 +1,13 @@
 package ProduceAndConsume;
 /**
  * @author Qinc
- * ÑİÊ¾join
- * Ã»Ğ´Íê,ÊÔÒ»ÏÂ
+ * æ¼”ç¤ºjoin
+ * æ²¡å†™å®Œ,è¯•ä¸€ä¸‹
  * 
  * 
- * µÚ¶ş´ÎÌá½»£¬ÊµÑéÒ»ÏÂºÏ²¢·ÖÖ§µÄ²Ù×÷
+ * ç¬¬äºŒæ¬¡æäº¤ï¼Œå®éªŒä¸€ä¸‹åˆå¹¶åˆ†æ”¯çš„æ“ä½œ
  * 
- * µÚÈı´ÎÁËÀ²À²À²À²À²À²
+ * ç¬¬ä¸‰æ¬¡äº†å•¦å•¦å•¦å•¦å•¦å•¦
  *
  */
 
@@ -17,7 +17,7 @@ public class ThreadJoin {
 		Thread t1= new Thread(tk);
 		t1.start();
 		//Thread.
-		System.out.println(Thread.currentThread()+"Ö÷Ïß³ÌÔÚÖ´ĞĞ½áÊø£¡");
+		System.out.println(Thread.currentThread()+"ä¸»çº¿ç¨‹åœ¨æ‰§è¡Œç»“æŸï¼");
 	}	
 }
 class task implements Runnable{
@@ -30,7 +30,7 @@ class task implements Runnable{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println(Thread.currentThread()+"×ÓÏß³ÌÔÚÖ´ĞĞ£»");
+			System.out.println(Thread.currentThread()+"å­çº¿ç¨‹åœ¨æ‰§è¡Œï¼›");
 		}
 		
 	}
