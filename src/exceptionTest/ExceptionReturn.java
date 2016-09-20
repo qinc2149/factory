@@ -1,45 +1,30 @@
 package exceptionTest;
 /**
  * @author Qinc
- * ¢ÙÖ´ĞĞ¶ÔÓ¦µÄcatch£»
- * ¢ÚÒ»¶¨Ö´ĞĞfinallyÖĞ´úÂë£»
- * ¢Ûtry³öÒì³£Ö®ºóµÄ´úÂë²»ÔÙÖ´ĞĞ£»
- *
- * ¢Ùbreak/continue/while£ºÈçÏÂÃæÀı×ÓÖĞËùÊ¾ÔÚÑ­»·ÖĞÓöµ½continue»òbreakÊ±£¬finallyÒ²»áÖ´ĞĞ
- * ¢Úreturn£º¼´Ê¹ÔÚtry¿éÖĞÕı³£Ö´ĞĞÁËreturn£¬finallyÒ²ÔÚreturnÖ®Ç°Ö´ĞĞÁË
- * 
- * ÒòÎªfinallyµÄÌØÊâĞÔ£¬»¹»áÔì³ÉÒì³£¶ªÊ§µÄÇé¿ö£¬Èç¹ûÔÚfinallyÖĞÅ×³öÒì³£»òÕßÔÚfinallyÖĞÊ¹ÓÃÁËreturn£¬ÔòÔÚtry¿éÖĞÅ×³öµÄÒì³£½«»á±»ÏµÍ³¶ªµô¡£
- * 
- * 
- *  Á´½ÓÓĞÏêÏ¸½éÉÜ£ºhttp://www.it165.net/pro/html/201601/59453.html
  */
 public class ExceptionReturn {
 
 	 public static void main(String[] args) {
-		String wxpayChans[]={"WXPC","WXO","YBS","WXPAY","WXAPP"};
-		System.out.println(wxpayChans.clone());
 		int x;	
 		try{
 			x = 1;
 			x=x/0;
-			System.out.println("Õı³£Ö´ĞĞ:"+x);
-			
+			System.out.println("æŠ›å¼‚å¸¸äº†:"+x);
+			return ;
 		}catch(ArithmeticException e){
 			x=2;
-			System.out.println("³öÏÖÒì³£:"+x);
+			System.out.println("@@@@@@@:"+x);
 			throw new RuntimeException();
 			//e.printStackTrace();
 			//return ;
 		}finally{
+			System.out.println("1111");
 			//x=3;
-			//System.out.println("finally×îºóÖ´ĞĞ:"+x);
-			//return ;    //return Ö®ºóÏµÍ³»á¶ªÆúµ½Òì³£ĞÅÏ¢
+			//System.out.println("finallyï¿½ï¿½ï¿½Ö´ï¿½ï¿½:"+x);
+			//return ;  
 		}
-		System.out.println("³öÏÖÒì³£´úÂë»¹»áÍùÏÂÖ´ĞĞÂğ£¿"+x);
+		//System.out.println("@@@@@@"+x);
 	}
 
 }
-/**
- * finally Ò»¶¨»á±»Ö´ĞĞ
- * 
- */
+
